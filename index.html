@@ -136,10 +136,11 @@
   .compliance-text span { font-size: 0.75rem; color: rgba(255,255,255,0.4); font-weight: 300; }
 
   #contact { background: var(--white); }
-  .contact-card { border: 1px solid var(--light-grey); border-radius: 4px; overflow: hidden; max-width: 640px; margin: 60px auto 0; }
-  .contact-card-header { padding: 32px 40px; background: var(--navy); text-align: center; }
+  .contact-card { border: 1px solid var(--light-grey); border-radius: 4px; overflow: hidden; max-width: 640px; margin: 60px auto 0; box-shadow: 0 12px 32px rgba(27,58,107,0.1); }
+  .contact-card-header { padding: 40px 40px 34px; background: var(--navy); background-image: radial-gradient(ellipse 400px 200px at 50% 0%, rgba(29,158,117,0.12), transparent 70%); text-align: center; }
   .contact-card-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 500; color: var(--white); margin-bottom: 6px; }
   .contact-card-header p { font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 300; }
+  .contact-card-tagline { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1D9E75; margin-top: 12px; }
   .contact-card-body { padding: 40px; }
   .contact-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--light-grey); font-size: 0.9rem; }
   .contact-row:last-of-type { border-bottom: none; }
@@ -431,8 +432,13 @@
 
     <div class="contact-card">
       <div class="contact-card-header">
+        <svg width="34" height="34" viewBox="0 0 40 40" fill="none" style="margin-bottom: 14px;">
+          <polyline points="8,20 20,8 32,20" fill="none" stroke="#1D9E75" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 19V32H27V19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         <h3>Videet Mardania</h3>
         <p>VM Property Services</p>
+        <div class="contact-card-tagline">Viewings &middot; Photography &middot; Key Holding</div>
       </div>
       <div class="contact-card-body">
         <div class="contact-row">
